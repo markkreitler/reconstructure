@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: kotlin-stdlib-common-1.3.61.jar annotations-13.0.jar kotlin-
+ stdlib-1.3.61.jar kotlin-stdlib-jdk7-1.3.61.jar kotlin-stdlib-jdk8-1.3.
+ 61.jar
+

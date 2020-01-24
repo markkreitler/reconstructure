@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>reconstructure</id>
+    <name>Reconstructure</name>
+    <vendor email="mkreitler@gotponcho.com" url="http://www.gotponcho.com">Poncho</vendor>
+
+    <description><![CDATA[
+    Parses data structures out of debugger window's 'Copy Value' representation.<br>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="org.intellij.sdk.action.PopupDialogAction" class="poncho_plugin.PopupDialogAction"
+                text="Reconstructure" description="SDK action example">
+            <keyboard-shortcut first-keystroke="control shift T" second-keystroke="C" keymap="$default"/>
+            <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
